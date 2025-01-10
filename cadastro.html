@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Cadastro e Listagem de produtos</title>
 </head>
 <body>
@@ -19,9 +20,13 @@
             <label>Valor do produto:</label>
             <input type="number">
 
-            <label>Disponível para venda?</label>
-            <input type="radio"> Sim
-            <input type="radio"> Não
+            <div>
+                Disponível para venda?
+                <div class="radio-group">
+                    <label><input type="radio" name="availability" value="sim" required> Sim</label>
+                    <label><input type="radio" name="availability" value="sim"> Não</label>
+                </div>
+            </div>
 
             <input type="submit" value="Cadastrar">
         </form>
